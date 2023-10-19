@@ -31,7 +31,7 @@ img {
   font-family: "Anek Devanagari", sans-serif;
 }
 .header__wrap {
-  padding-top: 2rem;
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: 2fr 4fr;
   align-items: center;
@@ -72,6 +72,7 @@ img {
 }
 
 .left-bar {
+  align-self: start;
   background-color: #7b898a;
   color: #fff;
   line-height: 1.5;
@@ -211,6 +212,7 @@ img {
 
 .languages__wrap {
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
 }
 .languages__item {
@@ -239,4 +241,59 @@ img {
   height: 8px;
   border-radius: 50%;
   background-color: #253439;
+}
+
+@media screen and (max-width: 920px) {
+  .portfolio__wrap,
+  .languages__wrap,
+  .experience__wrap {
+    flex-wrap: wrap;
+  }
+  .experience__wrap {
+    gap: 2rem;
+  }
+  .header__title {
+    font-size: 3rem;
+  }
+  .header__role {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header .avatar {
+    max-width: 150px;
+  }
+  .header .download {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__container {
+    flex-wrap: wrap;
+  }
+  .grid-wrap {
+    display: block;
+  }
+  .languages__wrap {
+    display: block;
+  }
+  .languages__item {
+    margin-bottom: 2rem;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__wrap {
+    display: block;
+    text-align: center;
+  }
+  .header__container {
+    display: block;
+    padding: 0;
+  }
+  .download__wrap {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
