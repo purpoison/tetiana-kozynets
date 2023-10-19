@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Convergence&display=swap");
+
+$primary-color: #253439;
+$secondary-color: #7b898a;
+$bg-color: #e0e7e3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Convergence", sans-serif;
+  background-color: $bg-color;
+}
+img {
+  width: 100%;
+}
+.header {
+  position: relative;
+  background-color: $primary-color;
+  color: #fff;
+  &__title {
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  &__role {
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-size: 3rem;
+    margin-top: 1rem;
+    font-family: "Anek Devanagari", sans-serif;
+  }
+  &__wrap {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    align-items: center;
+  }
+  &__container {
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .download {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/pdf.png");
+    background-size: contain;
+    transition: all 0.3s ease-in-out;
+  }
+  .download:hover {
+    background-image: url("../img/pdf\ \(1\).png");
+  }
+
+  .avatar {
+    margin: 0 auto;
+    filter: grayscale(1);
+    max-width: 200px;
+    border-radius: 50%;
+  }
+}
+.grid-wrap {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.left-bar {
+  .title {
+    border-bottom: 2px solid #fff;
+  }
+  background-color: $secondary-color;
+  color: #fff;
+  line-height: 1.5;
+  .wrapper {
+    padding: 1rem 2rem;
+  }
+  .section {
+    margin-bottom: 1.5rem;
+  }
+  .skills {
+    &__list {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contacts {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__img {
+    flex: 0 1 10%;
+    line-height: 0;
+  }
+  &__text {
+    flex: 0 1 90%;
+    a {
+      color: #fff;
+    }
+  }
+}
+.link {
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+.link:hover {
+  color: $primary-color;
+}
+.main {
+  color: $primary-color;
+  .title {
+    font-size: 20px;
+  }
+  padding: 2rem;
+  .link {
+    color: $primary-color;
+  }
+  .link:hover {
+    color: $secondary-color;
+  }
+}
+.education {
+  &__item {
+    position: relative;
+    padding: 0 0 20px 40px;
+    margin-left: 10px;
+  }
+  &__item:not(:last-child) {
+    border-left: 1px solid $primary-color;
+  }
+  &__item::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    left: -10px;
+  }
+}
+.light-text {
+  color: $secondary-color;
+  margin-bottom: 1rem;
+}
+.experience {
+  margin-bottom: 2rem;
+  &__wrap {
+    display: flex;
+  }
+  &__link {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    &-img {
+      flex: 0 1 5%;
+      line-height: 0;
+    }
+  }
+  &__address {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+}
+.portfolio {
+  &__wrap {
+    display: flex;
+    gap: 2rem;
+  }
+  &__img {
+    filter: grayscale(70%);
+    transition: all 0.3s ease-in-out;
+    img {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1);
+    }
+  }
+  &__img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  &__img:hover img {
+    transform: scale(1.1);
+  }
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  margin-bottom: 2rem;
+}
+.languages {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .light-text {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .grey {
+    background-color: $secondary-color;
+  }
+  &__lvl {
+    display: flex;
+    gap: 1rem;
+  }
+  &__lvl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+}

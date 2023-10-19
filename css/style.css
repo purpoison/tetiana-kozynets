@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Convergence&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Convergence", sans-serif;
+  background-color: #e0e7e3;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  position: relative;
+  background-color: #253439;
+  color: #fff;
+}
+.header__title {
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+.header__role {
+  text-transform: uppercase;
+  color: #7b898a;
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-family: "Anek Devanagari", sans-serif;
+}
+.header__wrap {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  align-items: center;
+}
+.header__container {
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .download {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/pdf.png");
+  background-size: contain;
+  transition: all 0.3s ease-in-out;
+}
+.header .download:hover {
+  background-image: url("../img/pdf (1).png");
+}
+.header .avatar {
+  margin: 0 auto;
+  filter: grayscale(1);
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.grid-wrap {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.left-bar {
+  background-color: #7b898a;
+  color: #fff;
+  line-height: 1.5;
+}
+.left-bar .title {
+  border-bottom: 2px solid #fff;
+}
+.left-bar .wrapper {
+  padding: 1rem 2rem;
+}
+.left-bar .section {
+  margin-bottom: 1.5rem;
+}
+.left-bar .skills__list {
+  padding-left: 1rem;
+}
+
+.title {
+  text-transform: uppercase;
+  border-bottom: 2px solid #253439;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contacts__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.contacts__img {
+  flex: 0 1 10%;
+  line-height: 0;
+}
+.contacts__text {
+  flex: 0 1 90%;
+}
+.contacts__text a {
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.link:hover {
+  color: #253439;
+}
+
+.main {
+  color: #253439;
+  padding: 2rem;
+}
+.main .title {
+  font-size: 20px;
+}
+.main .link {
+  color: #253439;
+}
+.main .link:hover {
+  color: #7b898a;
+}
+
+.education__item {
+  position: relative;
+  padding: 0 0 20px 40px;
+  margin-left: 10px;
+}
+.education__item:not(:last-child) {
+  border-left: 1px solid #253439;
+}
+.education__item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #253439;
+  left: -10px;
+}
+
+.light-text {
+  color: #7b898a;
+  margin-bottom: 1rem;
+}
+
+.experience {
+  margin-bottom: 2rem;
+}
+.experience__wrap {
+  display: flex;
+}
+.experience__link {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.experience__link-img {
+  flex: 0 1 5%;
+  line-height: 0;
+}
+.experience__address {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.portfolio {
+  margin-bottom: 2rem;
+}
+.portfolio__wrap {
+  display: flex;
+  gap: 2rem;
+}
+.portfolio__img {
+  filter: grayscale(70%);
+  transition: all 0.3s ease-in-out;
+}
+.portfolio__img img {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+.portfolio__img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+.portfolio__img:hover img {
+  transform: scale(1.1);
+}
+.portfolio__title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.languages__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.languages__item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+.languages__title {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.languages .light-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.languages .grey {
+  background-color: #7b898a;
+}
+.languages__lvl {
+  display: flex;
+  gap: 1rem;
+}
+.languages__lvl-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #253439;
+}/*# sourceMappingURL=style.css.map */
