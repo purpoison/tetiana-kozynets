@@ -159,6 +159,7 @@ img {
 .light-text {
   color: #7b898a;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .experience {
@@ -166,6 +167,7 @@ img {
 }
 .experience__wrap {
   display: flex;
+  margin-top: 2rem;
 }
 .experience__link {
   font-size: 14px;
