@@ -191,6 +191,12 @@ img {
   }
 }
 .portfolio {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
   &__wrap {
     display: flex;
     gap: 2rem;
