@@ -183,6 +183,13 @@ img {
   margin-top: 1rem;
   font-size: 14px;
 }
+.experience__company {
+  margin-bottom: 0.5rem;
+}
+.experience__title {
+  margin-top: 1rem;
+  font-size: 18px;
+}
 
 .portfolio {
   margin-bottom: 2rem;
